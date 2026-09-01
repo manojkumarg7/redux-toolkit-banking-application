@@ -28,9 +28,225 @@
   --fb-bg: #0b1220;
   --fb-surface: #142033;
   --fb-border: #243447;
-  --fb-text: #e6eef7;
-  --fb-muted: #9fb3c8;
+  --fb-text: #f5f8fc;
+  --fb-muted: #c5d4e4;
   --fb-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --bs-body-color: #f5f8fc;
+  --bs-body-bg: #0b1220;
+  --bs-secondary-color: #c5d4e4;
+  --bs-tertiary-color: #9fb3c8;
+  --bs-border-color: #243447;
+  --bs-heading-color: #ffffff;
+  color-scheme: dark;
+}
+
+/* Dark mode: force readable light text over Bootstrap defaults */
+.theme-dark,
+.theme-dark body,
+.theme-dark .app-shell,
+.theme-dark .app-main,
+.theme-dark .app-content,
+.theme-dark .app-sidebar,
+.theme-dark .app-header,
+.theme-dark .content-card,
+.theme-dark .stat-card,
+.theme-dark .dropdown-panel,
+.theme-dark .mobile-nav {
+  color: var(--fb-text);
+}
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6,
+.theme-dark .page-title,
+.theme-dark .stat-card-value,
+.theme-dark .display-amount,
+.theme-dark .result-value,
+.theme-dark strong,
+.theme-dark .fw-semibold,
+.theme-dark .fw-bold,
+.theme-dark dt,
+.theme-dark dd,
+.theme-dark label,
+.theme-dark .form-label,
+.theme-dark .form-check-label,
+.theme-dark .sidebar-brand strong,
+.theme-dark .detail-list dd {
+  color: #ffffff;
+}
+
+.theme-dark .text-muted,
+.theme-dark .form-text,
+.theme-dark small,
+.theme-dark .small,
+.theme-dark .tiny,
+.theme-dark .stat-card-title,
+.theme-dark .stat-card-subtitle,
+.theme-dark .bar-label,
+.theme-dark .detail-list dt,
+.theme-dark .sidebar-brand .text-muted,
+.theme-dark .result-card .text-muted {
+  color: var(--fb-muted) !important;
+}
+
+.theme-dark .table {
+  --bs-table-color: #f5f8fc;
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--fb-border);
+  --bs-table-striped-color: #f5f8fc;
+  --bs-table-hover-color: #ffffff;
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.04);
+  color: #f5f8fc;
+}
+
+.theme-dark .table th,
+.theme-dark .table td {
+  color: #f5f8fc;
+  border-color: var(--fb-border);
+}
+
+.theme-dark .table thead th {
+  color: #ffffff;
+}
+
+.theme-dark .form-control,
+.theme-dark .form-select {
+  background-color: #0f1a2b;
+  border-color: var(--fb-border);
+  color: #ffffff;
+}
+
+.theme-dark .form-control::placeholder {
+  color: #9fb3c8;
+  opacity: 1;
+}
+
+.theme-dark .form-control:focus,
+.theme-dark .form-select:focus {
+  background-color: #0f1a2b;
+  border-color: var(--fb-teal);
+  color: #ffffff;
+}
+
+.theme-dark .form-control:disabled,
+.theme-dark .form-select:disabled {
+  background-color: #1a2738;
+  color: #c5d4e4;
+}
+
+.theme-dark .btn-light {
+  background-color: #1a2738;
+  border-color: var(--fb-border);
+  color: #ffffff;
+}
+
+.theme-dark .btn-light:hover {
+  background-color: #243447;
+  border-color: #31465c;
+  color: #ffffff;
+}
+
+.theme-dark .btn-outline-secondary {
+  color: #e6eef7;
+  border-color: #4b6280;
+}
+
+.theme-dark .btn-outline-secondary:hover,
+.theme-dark .btn-outline-secondary:disabled {
+  color: #ffffff;
+}
+
+.theme-dark .btn-link {
+  color: #7dd3ce;
+}
+
+.theme-dark .dropdown-link {
+  color: #f5f8fc;
+}
+
+.theme-dark .sidebar-link {
+  color: var(--fb-muted);
+}
+
+.theme-dark .sidebar-link:hover,
+.theme-dark .sidebar-link.active {
+  color: #7dd3ce;
+  background: rgba(125, 211, 206, 0.12);
+}
+
+.theme-dark .quick-action {
+  color: #f5f8fc;
+  border-color: var(--fb-border);
+}
+
+.theme-dark .quick-action:hover {
+  color: #ffffff;
+  background: rgba(125, 211, 206, 0.08);
+}
+
+.theme-dark .transaction-card,
+.theme-dark .beneficiary-card,
+.theme-dark .result-card,
+.theme-dark .transfer-step {
+  background: var(--fb-surface);
+  border-color: var(--fb-border);
+  color: #f5f8fc;
+}
+
+.theme-dark .border-bottom {
+  border-color: var(--fb-border) !important;
+}
+
+.theme-dark .list-unstyled,
+.theme-dark .account-summary-list,
+.theme-dark .settings-list,
+.theme-dark .donut-legend {
+  color: #f5f8fc;
+}
+
+.theme-dark code {
+  color: #7dd3ce;
+  background: #0f1a2b;
+}
+
+.theme-dark .notif-item {
+  color: #f5f8fc;
+}
+
+.theme-dark .notif-item.unread {
+  background: rgba(125, 211, 206, 0.1);
+}
+
+.theme-dark .mobile-nav-link {
+  color: var(--fb-muted);
+}
+
+.theme-dark .mobile-nav-link.active {
+  color: #7dd3ce;
+  background: rgba(125, 211, 206, 0.12);
+}
+
+.theme-dark .stat-card-navy .stat-card-icon {
+  color: #8ecae6;
+}
+
+.theme-dark .text-success {
+  color: #62d49a !important;
+}
+
+.theme-dark .text-danger {
+  color: #ff8f7a !important;
+}
+
+.theme-dark .app-toast {
+  color: #f5f8fc;
+}
+
+.theme-dark .input-group .btn-outline-secondary {
+  background-color: #0f1a2b;
 }
 
 * {
