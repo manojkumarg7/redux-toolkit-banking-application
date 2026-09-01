@@ -1,0 +1,17 @@
+export const ROUTES = {
+  login: '/login',
+  dashboard: '/',
+  accounts: '/accounts',
+  accountDetail: '/accounts/:accountId',
+  transactions: '/transactions',
+  transfers: '/transfers',
+  beneficiaries: '/beneficiaries',
+  calculators: '/calculators',
+  simpleInterest: '/calculators/simple-interest',
+  compoundInterest: '/calculators/compound-interest',
+  loanEmi: '/calculators/loan-emi',
+  fixedDeposit: '/calculators/fixed-deposit',
+  recurringDeposit: '/calculators/recurring-deposit',
+  profile: '/profile',
+  settings: '/settings',
+} as const;
