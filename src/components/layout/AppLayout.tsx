@@ -14,7 +14,7 @@ export function AppLayout() {
       <Sidebar />
       <div className="app-main">
         <Header />
-        <main className="app-content">
+        <main className="app-content" id="main-content">
           <Outlet />
         </main>
       </div>
